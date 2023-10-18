@@ -1,4 +1,4 @@
-# React
+# Learning React with create-react-app
 Documentation
 
 # Table of Content
@@ -27,6 +27,12 @@ Documentation
 
 
 # Introduction
+React is an open-source front-end JavaScript library created by META (formerly facebook). React is used for building userinterfaces  web and mobile applications by creating UI components. React can be used to create
+- Single page applications
+- Mobile applications
+- Web applications
+- Server-rendered applications
+React also have support powerful framework's support like Next.js
 
 [Back to the Top](#table-of-content)
 
