@@ -39,6 +39,7 @@ React also have support powerful framework's support like Next.js
 ---
 # Installation and Setup
 To start a react project you must have *nodeJS* installed in your PC. To install NodeJS, go to the official website of nodejs https://nodejs.org/en
+Here as shown in the picture below. Download and install the **LTS verstion** not the Current. You might have a different version from mine at that time when you are going through.
 ![nodejs](resources/nodejs_installation.png)
 
 [Back to the Top](#table-of-content)
