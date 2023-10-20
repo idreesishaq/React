@@ -6,7 +6,7 @@ Documentation
 |Topics|
 |----------|
 |[Introduction](#introduction)|
-|[Installation](#installation)|
+|[Installation and Setup](#installation-and-setup)|
 |[Start a new React Project](#start-a-new-react-project)|
 |[Code Structure](#code-structure)|
 |[JSX](#jsx)|
@@ -37,7 +37,8 @@ React also have support powerful framework's support like Next.js
 [Back to the Top](#table-of-content)
 
 ---
-# Installation
+# Installation and Setup
+To start a react project you must have *nodeJS* installed in your PC. To install NodeJS, go to the official website of nodejs https://nodejs.org/en
 
 [Back to the Top](#table-of-content)
 
