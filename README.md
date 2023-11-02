@@ -148,6 +148,8 @@ function Button () {
 }
 export default React.memo("Button");
 ```
+Here is the glimpse of the working code.
+![An example of React.memo (hook)](resources/React-memo.gif)
 
 [Back to the Top](#table-of-content)
 
