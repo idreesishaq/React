@@ -173,6 +173,28 @@ function App() {
 export default App;
 ```
 
+# useRef
+### Example 1
+using useRef hook get the value from input field.
+###### App jsx
+```
+//--App.js--
+import {useRef} from 'react';
+
+function App() {
+  const inputRef = useRef(null);
+
+  return (
+    <>
+      <input ref={inputRef}/>
+      <button onClick={()=>{console.log(inputRef.current.value)}}>Get input value</button>
+    </>
+  )
+}
+
+export default App;
+```
+
 
 
 [Back to the Top](#table-of-content)
