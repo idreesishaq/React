@@ -172,29 +172,38 @@ function App() {
 
 export default App;
 ```
+![React Hook useRef to Get input field's value](resources/useRef_get_input_value.gif)
 
-# useRef
-### Example 1
-using useRef hook get the value from input field.
-###### App jsx
+### Example 2
+using useRef hook get a DOM element.
+
+The previous code for counter, in which on every click on "Increment" button, the counter increments by 1 because of changing state using **useState** React hook.
+Here I am using **useRef** to get the DOM element.
+
 ```
 //--App.js--
-import {useRef} from 'react';
+import './App.css';
+
+import {useState, useRef} from 'react';
 
 function App() {
-  const inputRef = useRef(null);
+  const [counter, setCounter] = useState(0);
+  const headingRef = useRef(null);
 
   return (
     <>
-      <input ref={inputRef}/>
-      <button onClick={()=>{console.log(inputRef.current.value)}}>Get input value</button>
+      <h1 ref={headingRef}>{counter}</h1>
+      <br/>
+      <button onClick = {()=>{setCounter(counter+1); console.log(headingRef.current)}}>Increment</button>
+
     </>
-  )
+  );
 }
 
 export default App;
-```
 
+```
+![React Hook useRef to get DOM element](resources/useRef_with_state_counter.gif)
 
 
 [Back to the Top](#table-of-content)
