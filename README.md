@@ -233,6 +233,20 @@ function App() {
 export default App;
 ```
 
+###### ./src/componenets/Button/index.js
+```
+import {memo} from "react";
+function Child() {
+    console.log("Child component");
+    return(
+        <div>
+            <h1>Child component</h1>
+        </div>
+    )
+}
+
+export default memo(Child);
+```
 
 [Back to the Top](#table-of-content)
 
