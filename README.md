@@ -209,6 +209,30 @@ export default App;
 You have seen the application of **React.memo** or simply **memo** that how it avoids unnecessary rendering by memorizing the rendered output. It improves the performance by memorizing the result and skip the last rendered result. Any component that put into **memo** method of **React** will not be re-rendered by with the re-rendering of main component of App because of **state change**. 
 See below the example of **memo** usage again;
 
+### Example 1: using memo avoid re-rendering
+###### App.js
+```
+import {useState} from "react";
+import Button from "./components/Button";
+import Child from "./components/Child";
+
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return(
+    <div>
+      <Child />
+      <h1>{count}</h1>
+      <button onClick={()=>setCount(oldValue => oldValue +1)}>Increment</button>
+      <button disabled={count < 1} onClick={()=>setCount(oldValue => oldValue -1)}>Decrement</button>
+    </div>
+  )
+}
+
+export default App;
+```
+
 
 [Back to the Top](#table-of-content)
 
