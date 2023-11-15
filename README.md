@@ -247,6 +247,8 @@ function Child() {
 
 export default memo(Child);
 ```
+![React.memo to avoid re-rendering by memorizing](resources/memo_react_avoid_re-rendering.gif)
+
 
 [Back to the Top](#table-of-content)
 
