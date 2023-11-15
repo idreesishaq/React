@@ -249,6 +249,50 @@ export default memo(Child);
 ```
 ![React.memo to avoid re-rendering by memorizing](resources/memo_react_avoid_re-rendering.gif)
 
+## BUT...
+How long **memo** avoids the re-rendering of a component?
+If a prop of a function or object is passed to the memorized component. Then it will **re-render** again with the re-rendering of the main component.
+
+consider this code and its demo.
+###### App.js
+```
+import {useState} from "react";
+import Child from "./components/Child";
+
+function App() {
+  const [count, setCount] = useState(0);
+  const getData = ()=> {
+    return ["one", "two"];
+  }
+  return(
+    <div>
+      <Child getData={getData}/>
+      <h1>{count}</h1>
+      <button onClick={()=>setCount(oldValue => oldValue +1)}>Increment</button>
+      <button disabled={count < 1} onClick={()=>setCount(oldValue => oldValue -1)}>Decrement</button>
+    </div>
+  )
+}
+
+export default App;
+```
+###### ./src/components/Child/index.js
+```
+import {memo} from "react";
+function Child({getData}) {
+    console.log(getData());
+    console.log("Child component");
+    return(
+        <div>
+            <h1>Child component</h1>
+        </div>
+    )
+}
+export default memo(Child);
+```
+
+
+
 
 [Back to the Top](#table-of-content)
 
