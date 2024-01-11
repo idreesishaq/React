@@ -240,7 +240,7 @@ export default App;
 ```
 
 ###### ./src/componenets/Button/index.js
-```
+```JavaScript
 import {memo} from "react";
 function Child() {
     console.log("Child component");
@@ -261,7 +261,7 @@ If a prop of a function or object is passed to the memorized component. Then it 
 
 consider this code and its demo.
 ###### App.js
-```
+```JavaScript
 import {useState} from "react";
 import Child from "./components/Child";
 
@@ -282,8 +282,9 @@ function App() {
 
 export default App;
 ```
+
 ###### ./src/components/Child/index.js
-```
+```JavaScript
 import {memo} from "react";
 function Child({getData}) {
     console.log(getData());
