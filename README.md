@@ -93,7 +93,7 @@ Here as shown in the picture below. Download and install the **LTS verstion** no
 
 ## React.memo
 ###### App.js
-```
+```JavaScript
 //--App.js--
 import './App.css';
 import Button from './components/Button';
@@ -114,8 +114,9 @@ function App() {
 }
 export default App;
 ```
+
 ###### componenets/Button/index.js
-```
+```JavaScript
 //--components/Button/index.js--
 
 function Button () {
@@ -137,7 +138,8 @@ Then, we use React.memo exactly where we are exporting the component like this
 `export default React.memo(Button)`
 
 See the complete code with changes.
-```
+
+```JavaScript
 //--components/Button/index.js--
 import React from "react";
 function Button () {
@@ -154,8 +156,9 @@ Here is the glimpse of the working code.
 ## useRef
 ### Example 1
 using useRef hook get the value from input field.
-###### App jsx
-```
+
+###### App.jsx
+```JavaScript
 //--App.js--
 import {useRef} from 'react';
 
@@ -172,6 +175,7 @@ function App() {
 
 export default App;
 ```
+
 ![React Hook useRef to Get input field's value](resources/useRef_get_input_value.gif)
 
 ### Example 2
@@ -180,7 +184,7 @@ using useRef hook get a DOM element.
 The previous code for counter, in which on every click on "Increment" button, the counter increments by 1 because of changing state using **useState** React hook.
 Here I am using **useRef** to get the DOM element.
 
-```
+```JavaScript
 //--App.js--
 import './App.css';
 
@@ -203,6 +207,7 @@ function App() {
 export default App;
 
 ```
+
 ![React Hook useRef to get DOM element](resources/useRef_with_state_counter.gif)
 
 ## useCallback
@@ -210,8 +215,9 @@ You have seen the application of **React.memo** or simply **memo** that how it a
 See below the example of **memo** usage again;
 
 ### Example 1: using memo avoid re-rendering
+
 ###### App.js
-```
+```JavaScript
 import {useState} from "react";
 import Button from "./components/Button";
 import Child from "./components/Child";
