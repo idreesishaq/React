@@ -47,6 +47,24 @@ Here as shown in the picture below. Download and install the **LTS verstion** no
 ---
 
 # Start a new React Project
+Now you have installed **nodeJS** which give *npm* command. We can create a new REACT Project with this command
+```
+npm i -g create-react-app
+```
+this will install the library **create-react-app** in our computer globally (the -g flag is for globally, mean all the user of a PC can have the installed library)
+Then, create a react project with create-react-app
+```
+create-react-app projectName
+```
+
+AND the another, easier way to create a REACT project, We have just one command
+```
+npx create-react-app projectName
+```
+by this command,
+- we do not need to install the library in our PC locally, so, we save our storage by this means.
+- the *npx* command here mean **Node Package eXecute**, also comes with *npm* command from nodejs. It can execute any package from the npm registry directly without even instally the package.
+
 
 [Back to the Top](#table-of-content)
 
