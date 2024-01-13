@@ -70,6 +70,7 @@ by this command,
 
 ---
 # Code Structure
+Let start the React project by understand the code structure and some common style conventions in React
 
 [Back to the Top](#table-of-content)
 
